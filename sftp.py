@@ -10,8 +10,8 @@ cnopts.hostkeys = None
 
 # Your particulars for accessing the sftp client
 myHostname = "frs.sourceforge.net"
-myUsername = os.environ["USERNAME"]
-myPassword = os.environ["PASSWORD"]
+myUsername = os.environ["username"]
+myPassword = os.environ["password"]
 
 # Sourceforge or any other sftp client uploader script
 
