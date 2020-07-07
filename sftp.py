@@ -23,12 +23,12 @@ with pysftp.Connection(host=myHostname, username=myUsername, password=myPassword
     # Obtain structure of the remote directory
     directory_structure = sftp.listdir_attr()
 
-    source = '$ZIP_NAME-GSI-Aonly.7z'  # The path where your file is stored on your drive
+    source = 'output/$ZIP_NAME-GSI-Aonly.7z'  # The path where your file is stored on your drive
     # The path where you want to upload
     destination = '/home/frs/project/ahoy-builds/gsi/$ZIP_NAME-GSI-Aonly.7z'
     sftp.put(source, destination)
 
-    source = '$ZIP_NAME-GSI-AB.7z'  # The path where your file is stored on your drive
+    source = 'output/$ZIP_NAME-GSI-AB.7z'  # The path where your file is stored on your drive
     # The path where you want to upload
     destination = '/home/frs/project/ahoy-builds/gsi/$ZIP_NAME-GSI-AB.7z'
     sftp.put(source, destination)
