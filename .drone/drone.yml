@@ -15,7 +15,7 @@ steps:
   - echo test   
   - git config --global user.email "soniataran79@gmail.com"
   - git config --global user.name "aman25502"
-  - sudo mkdir "testl"
+  - sudo -S mkdir "testl"
   - cd "testl"
   - repo init -u https://github.com/Legionrom/platform_manifest.git -b q
   - repo sync -c --force-sync --no-clone-bundle -j8
