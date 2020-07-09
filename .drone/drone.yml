@@ -1,0 +1,11 @@
+kind: pipeline
+name: Built Bot
+
+steps:
+- name: ROM
+  image: baalajimaestro/android_build:latest
+  environment:
+    GITHUB_TOKEN:
+      from_secret: GITHUB_TOKEN
+  commands:
+echo hello
