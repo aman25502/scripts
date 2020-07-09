@@ -15,7 +15,6 @@ steps:
   - echo test   
   - git config --global user.email "soniataran79@gmail.com"
   - git config --global user.name "aman25502"
-  - sudo echo "ci ALL=(ALL) NOPASSWD: ALL" >>/etc/sudoers
   - useradd -m -d /home/ci ci
   - useradd -g ci wheel
   - cd /home/ci
