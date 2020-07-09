@@ -12,7 +12,7 @@ steps:
     GITHUB_TOKEN:
       from_secret: GITHUB_TOKEN
   commands:
- - git config --global user.email "soniataran79@gmail.com"
+   git config --global user.email "soniataran79@gmail.com"
    git config --global user.name "aman25502"
    mkdir "testl"
    cd "testl"
